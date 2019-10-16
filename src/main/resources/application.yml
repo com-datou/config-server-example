@@ -1,6 +1,7 @@
 server:
   servlet:
     application-display-name: config-server
+    context-path: /config
   port: 8081
 spring:
   application:
