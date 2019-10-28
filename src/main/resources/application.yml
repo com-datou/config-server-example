@@ -1,7 +1,9 @@
 server:
   servlet:
     application-display-name: config-server
-  port: 8081
+  port: 8071
+#  port: 8081
+   
 spring:
   application:
     name: CONFIG-SERVER-EXAMPLE
@@ -21,3 +23,8 @@ eureka:
     instance-id: ${spring.cloud.client.ip-address}:${server.port}
     lease-renewal-interval-in-seconds: 5     
     lease-expiration-duration-in-seconds: 15
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
